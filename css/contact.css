@@ -1,0 +1,136 @@
+@keyframes up_down {
+    0% {
+        margin-top: -2rem;
+    }
+
+    100% {
+        margin-bottom: -2rem;
+    }
+}
+
+.news_img {
+    animation-name: up_down;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+/* Background */
+.bg {
+    background-image: url(../Images/Contact/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.news_heading {
+    color: white;
+    margin-top: 4rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.colorChange {
+    color: rgb(183, 10, 174);
+}
+
+/* NAVBAR */
+.nav_ul {
+    margin-left: 13rem;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar {
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0rem 0.5rem;
+    padding: 0.3rem 1.5rem !important;
+}
+
+.nav-link:hover {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+/* part1 */
+.linkdiv {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.img_link {
+    height: 2rem;
+    margin: 0rem 0.3rem;
+}
+
+.h5_link {
+    color: rgb(103, 103, 103);
+}
+/* upper Arrow */
+.uppDiv{
+    position: relative;
+  }
+  
+  .bi-arrow-up-circle-fill{
+    font-size: 3rem;
+    color: white!important;
+    position: fixed;
+    bottom: 8rem;
+    right: 2rem;
+  }
+
+  .bi-house-door{
+    font-size: 3rem;
+    color: white!important;
+    position: fixed;
+    bottom: 12rem;
+    right: 2rem;
+  }
+
+
+/* media qurey */
+@media screen and (max-width:991px) {
+    .navbar{
+        display: none!important;
+    }    
+}
+@media screen and (max-width:741px) {
+    .bg {
+        height: 100vh;
+    }
+    .bi-arrow-up-circle-fill{
+        font-size: 2rem;
+    }
+    .bi-house-door{
+        font-size: 2rem;
+
+    }
+}
+
+@media screen and (max-width:316px) {
+    .h5_link {
+        font-size: 0.6rem;
+    }
+    .bi-arrow-up-circle-fill{
+        font-size: 1.5rem;
+    }
+    .bi-house-door{
+        font-size: 1.5rem;
+
+    }
+}
